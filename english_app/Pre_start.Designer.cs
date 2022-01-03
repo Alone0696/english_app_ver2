@@ -51,7 +51,7 @@ namespace english_app
             // 
             this.name.AutoSize = true;
             this.name.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.name.Location = new System.Drawing.Point(12, 47);
+            this.name.Location = new System.Drawing.Point(15, 47);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(376, 32);
             this.name.TabIndex = 2;
@@ -60,14 +60,15 @@ namespace english_app
             // count
             // 
             this.count.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.count.Location = new System.Drawing.Point(122, 126);
+            this.count.Location = new System.Drawing.Point(54, 135);
             this.count.Name = "count";
-            this.count.Size = new System.Drawing.Size(150, 39);
+            this.count.Size = new System.Drawing.Size(304, 39);
             this.count.TabIndex = 1;
+            this.count.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(146, 216);
+            this.start.Location = new System.Drawing.Point(139, 215);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(112, 34);
             this.start.TabIndex = 0;

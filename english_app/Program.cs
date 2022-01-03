@@ -12,7 +12,7 @@ namespace english_app
     {
         public static Ed_slovar show_sl;
         public static Pre_start count;
-        public static Testing  test;
+        public static int s_count;
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -35,18 +35,18 @@ namespace english_app
 
         static void Start()
         {
-            
+            refresh_sl();
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main_menu());
-            //Application.Run(new Ed_slovar());
         }
         
         public static string refresh_sl()
         {
             string d = "";
             var slovar = Program.ReadFromBinaryFile<Dictionary<string, string>>("slovar.slvr");
+            s_count = slovar.Count();
             foreach (var key in slovar)
             {
                 d+= key.Key + " -> " + key.Value + '\r' + '\n';

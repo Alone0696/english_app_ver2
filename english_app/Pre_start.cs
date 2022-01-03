@@ -26,9 +26,25 @@ namespace english_app
 
         private void start_Click(object sender, EventArgs e)
         {
-            Testing t = new();
-            t.Show();
-            this.Hide();
+            try
+            {
+                if (Program.s_count < Convert.ToInt32(this.count.Text))
+                {
+                    this.count.Text = "У меня нет столько слов(";
+                }
+                else 
+                {
+                    Testing t = new();
+                    t.Show();
+                    this.Hide(); 
+                }
+
+            }
+            catch
+            {
+                this.count.Text = "Ошибка";
+            }
+            
         }
     }
 }

@@ -22,12 +22,20 @@ namespace english_app
         string a, res_a, res;
         static Dictionary<string,string> slovar = Program.ReadFromBinaryFile<Dictionary<string, string>>("slovar.slvr");
         List<string> keyList = new List<string>(slovar.Keys);
+        
+        public void del_one()
+        {
+            keyList.Remove(a);
+        }
         public Testing()
         {
             InitializeComponent();
             Dictionary<string, string> slovar = Program.ReadFromBinaryFile<Dictionary<string, string>>("slovar.slvr");
             List<string> keyList = new List<string>(slovar.Keys);
             (k, True, False) = (0, 0, 0);
+            slova.Clear();
+            verniy.Clear();
+            oshibki.Clear();
             a = keyList[rand.Next(keyList.Count)];
             this.question.Text = a;
             this.counter.Text = Convert.ToString(i);
@@ -35,6 +43,7 @@ namespace english_app
             res = slovar[a];
             slovar.Remove(a);
             keyList.Remove(a);
+            del_one();
         }
 
         private void Testing_FormClosed(object sender, FormClosedEventArgs e)
@@ -68,7 +77,7 @@ namespace english_app
             res_a = a;
             keyList.Remove(a);
             this.textBox1.Text = "";
-            if (i == n+1)
+            if (i == n)
             {
                 this.Close();
             }
