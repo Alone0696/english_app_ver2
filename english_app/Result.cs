@@ -15,19 +15,11 @@ namespace english_app
         public Result()
         {
             InitializeComponent();
-            this.results.Text = "Ваш результат " + Convert.ToString(Testing.True) + " из " + Convert.ToString(Program.count.count.Text);
-            int i;
-            if (Testing.False == 0)
-            {
-                this.textBox1.Text = "Ошибок нет!)";
-            }
-            else
-            {
-                for (i = 0; i < Testing.k; i++)
-                {
-                    this.textBox1.Text += Testing.slova[i] + " -> " + "ваш ответ ~" +Testing.oshibki[i] + "~ ,а правильно:" + Testing.verniy[i] + "\r" + "\n";
-                }
-            }
+            string S;
+            int True;
+            (S, True) = Logic.calculation();
+            this.textBox1.Text = S;
+            this.results.Text = "Ваш результат " + Convert.ToString(True) + " из " + Convert.ToString(Program.count.count.Text);
         }
     }
 }

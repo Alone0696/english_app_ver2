@@ -93,9 +93,9 @@ namespace english_app
 
         #endregion
 
-        private System.Windows.Forms.Button next;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label counter;
-        private System.Windows.Forms.Label question;
+        public System.Windows.Forms.Button next;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.Label counter;
+        public System.Windows.Forms.Label question;
     }
 }

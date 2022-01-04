@@ -28,9 +28,13 @@ namespace english_app
         {
             try
             {
+                if (Convert.ToInt32(this.count.Text) <= 0 )
+                {
+                    this.count.Text = "Ошибка";
+                }
                 if (Program.s_count < Convert.ToInt32(this.count.Text))
                 {
-                    this.count.Text = "У меня нет столько слов(";
+                    this.count.Text = "У меня нет столько слов";
                 }
                 else 
                 {

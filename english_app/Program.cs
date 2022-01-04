@@ -13,6 +13,7 @@ namespace english_app
         public static Ed_slovar show_sl;
         public static Pre_start count;
         public static int s_count;
+        public static Testing access;
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

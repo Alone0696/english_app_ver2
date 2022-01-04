@@ -57,13 +57,14 @@ namespace english_app
             // 
             // textBox1
             // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(0, 72);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(712, 303);
+            this.textBox1.Size = new System.Drawing.Size(718, 303);
             this.textBox1.TabIndex = 2;
             // 
             // Result
