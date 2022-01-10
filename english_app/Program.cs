@@ -14,6 +14,12 @@ namespace english_app
         public static Pre_start count;
         public static int s_count;
         public static Testing access;
+        ///Цвета приложения
+        public static System.Drawing.Color main_color = System.Drawing.ColorTranslator.FromHtml("#1F0449"); 	
+        public static System.Drawing.Color button_color = System.Drawing.ColorTranslator.FromHtml("#331D55"); 
+        public static System.Drawing.Color box_color = System.Drawing.ColorTranslator.FromHtml("#340D71"); 
+
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

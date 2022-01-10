@@ -15,6 +15,8 @@ namespace english_app
         public Main_menu()
         {
             InitializeComponent();
+            this.tableLayoutPanel1.BackColor = this.tableLayoutPanel2.BackColor = Program.main_color;
+            this.Start_app.BackColor = this.setings_app.BackColor = Program.button_color;
         }
 
         private void Start_app_Click(object sender, EventArgs e)

@@ -15,6 +15,9 @@ namespace english_app
         public Del()
         {
             InitializeComponent();
+            this.tableLayoutPanel1.BackColor = this.tableLayoutPanel2.BackColor = this.tableLayoutPanel3.BackColor = Program.main_color;
+            this.ruen.BackColor = Program.box_color;
+            this.del_in.BackColor = Program.button_color;
         }
 
         private void del_in_Click(object sender, EventArgs e)

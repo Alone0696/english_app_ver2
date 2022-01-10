@@ -16,6 +16,9 @@ namespace english_app
         {
             Program.show_sl = this;
             InitializeComponent();
+            this.tableLayoutPanel1.BackColor = this.tableLayoutPanel2.BackColor = Program.main_color;
+            this.add.BackColor = this.del.BackColor = Program.button_color;
+            this.slovar.BackColor = Program.box_color;
             this.slovar.Text = Program.refresh_sl();
             this.add.Focus();
 

@@ -16,6 +16,10 @@ namespace english_app
         {
             InitializeComponent();
             Program.count = this;
+            ///Color
+            this.tableLayoutPanel1.BackColor = Program.main_color;
+            this.count.BackColor = Program.box_color;
+            this.start.BackColor = Program.button_color;
         }
 
         private void Pre_start_FormClosed(object sender, FormClosedEventArgs e)

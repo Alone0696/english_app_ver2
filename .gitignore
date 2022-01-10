@@ -1,6 +1,9 @@
 *.editorconfig
 */obj
+*/bin/Release
 *.vs
 *.csproj
 *.csproj.user
 *.slvr
+*/Properties
+*english_app.runtimeconfig.dev.json

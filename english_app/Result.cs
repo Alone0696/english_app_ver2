@@ -15,6 +15,8 @@ namespace english_app
         public Result()
         {
             InitializeComponent();
+            this.textBox1.BackColor = Program.box_color;
+            this.tableLayoutPanel1.BackColor = Program.main_color;
             string S;
             int True;
             (S, True) = Logic.calculation();

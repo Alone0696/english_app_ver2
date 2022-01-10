@@ -17,6 +17,9 @@ namespace english_app
         {
             InitializeComponent();
             Program.access = this;
+            this.tableLayoutPanel1.BackColor = Program.main_color;
+            this.next.BackColor = Program.button_color;
+            this.textBox1.BackColor = Program.box_color;
             l.logic_first();
         }
 

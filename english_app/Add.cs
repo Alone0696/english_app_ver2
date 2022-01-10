@@ -15,6 +15,9 @@ namespace english_app
         public Add()
         {
             InitializeComponent();
+            this.tableLayoutPanel1.BackColor = this.tableLayoutPanel2.BackColor = this.tableLayoutPanel3.BackColor = Program.main_color;
+            this.ru.BackColor = this.en.BackColor = Program.box_color;
+            this.add_in.BackColor = Program.button_color;
             this.en.Text = "";
         }
 
