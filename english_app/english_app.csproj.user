@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Эльдар\Desktop\english_app_ver2\english_app\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Del.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Ed_slovar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Main_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pre_start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Testing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
